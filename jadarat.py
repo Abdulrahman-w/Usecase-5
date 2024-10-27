@@ -76,7 +76,7 @@ region_counts.columns = ['region', 'count']
 fig = px.pie(region_counts, 
              names='region', 
              values='count', 
-             title='The Proportion of Job Postings for Each Region within Saudi Arabia',
+             title='نسبة الوظائف المعلن عنها لكل منطقة في المملكة العربية السعودية',
              hole=0.2,  
              ) 
 
@@ -112,7 +112,7 @@ fig2 = pg.Figure(data=[
 
 # Update layout
 fig2.update_layout(
-    title='The Proportion of Job Postings for Each Gender',
+    title='نسبة الوظائف المعلن عنها للذكور والإناث',
     xaxis_title='Gender',
     yaxis_title='Number of Job Postings ',
     barmode='group'  # Grouped bar mode
@@ -127,7 +127,7 @@ fresh_grads = df_jadarat[df_jadarat['exper'] == 0]
 fig3 = px.box(fresh_grads, 
                  x='exper', 
                  y='benefits', 
-                 title='Salary Range for Fresh Graduates', 
+                 title='مدى الراتب للخريجين ', 
                  labels={'exper': 'Freshers', 'benefits': 'Salary'},
                  color='exper', 
                  hover_data=['benefits'],
