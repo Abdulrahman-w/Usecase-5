@@ -142,7 +142,7 @@ fig4 = px.histogram(
     x='exper',
     color='exper',  # Use 'exper' for color
     color_discrete_sequence=px.colors.sequential.Aggrnyl,  # Dark to light color scale
-    title='Number of Job Postings by Experience'
+    title='عدد الوظائف المعلن عنها بمختلف سنوات الخبرة'
 )
 
 # Show the plot
